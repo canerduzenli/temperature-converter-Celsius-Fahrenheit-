@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>Temperature Converter</h1>
+  </header>
+  <button id="theme-button" onclick="toggleTheme()">Switch Mode</button>
+  <main>
+    <form>
+      <div class="temperature">
+        <p>Enter Temperature:</p>
+      </div>
+      <input type="text" id="temperature" required>
+      <div class="to-celsius">
+        <input type="radio" id="to-celsius" name="conversion-type" value="celsius" checked>
+        <label for="to-celsius">Conver to Celsius:</label>
+      </div>
+
+      <div class="to-fahrenheit">
+        <input type="radio" id="to-fahrenheit" name="conversion-type" value="fahrenheit" checked>
+        <label for="to-fahrenheit">Convert to Fahrenheit:</label>
+      </div>
+      <button type="button" onclick="convertTemperature()">Convert</button>
+      <div class="result">
+        <p><span id="result"></span> </p>
+      </div>
+    </form>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
